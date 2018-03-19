@@ -1,0 +1,111 @@
+body
+{
+	background-color: #ecf0f1;
+
+}
+@import "compass/css3";
+
+.navigation {
+
+  
+
+  background:  black;
+  opacity: .8;
+  display: flex;
+  justify-content: flex-start;
+  flex-direction: row;
+  
+
+}
+.item {
+  text-decoration: none;
+  color: white;
+
+
+ 
+ text-align: center; 
+    padding: 10px;
+    margin:10px;
+    margin-left: 100px;
+    
+
+}
+.btn-primary{
+  background-color: green;
+  text-align: center;
+  padding-left: 3px;
+
+    margin:15px;
+    border:1px solid black;
+    border-radius: 3px;
+}
+.Email
+{
+padding-left: 3px;
+width:20vw;
+    margin:15px;
+    margin-left: 23vw;
+    border:1px solid black;
+    border-radius: 3px;
+}
+.pass
+{
+  padding-left: 3px;
+width:20vw;
+    margin:15px ;
+    margin-left: 2vw;
+    
+    border:1px solid black;
+    border-radius: 3px;
+}
+
+ .item:hover {
+  background-color: #7979d2;
+
+text-decoration: none;
+  cursor: pointer;
+  transform: scale(1.15);
+  transition-duration: .2s;
+  border-radius: 1px;
+ 
+  color:white;
+/*margin:1px;*/
+
+
+}
+#register {
+display: inline-block;
+margin:5px;
+width:150px;
+  font-size: 14px;
+  font-weight: 600;
+  padding: 10px;
+margin-left: 40vw;
+
+
+}
+#basic-addon2{
+ font-size: 25px;
+
+}
+
+.hello{
+  width:50%;
+  
+margin-left: 40vw;
+
+
+}
+.go
+{
+  margin-left: 37vw;
+  opacity: 70%;
+}
+.form-control
+{
+  width:90%;
+}
+@media screen and(max-width: 600px){
+
+  
+}
