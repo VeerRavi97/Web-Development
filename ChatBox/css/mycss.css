@@ -1,0 +1,83 @@
+
+
+body {
+    background-color: #d2dae2;
+  /*color: #fff;*/
+   }
+
+.container{
+  border-bottom-color:1px solid white;
+   }
+  
+  .navbar-brand:hover{
+
+transition-duration: .5s;
+transform:scale(1.2);
+
+background-color:none
+  }
+  .btn:hover{
+    background-color: #575fcf;
+
+  }
+ /** Extra small devices (portrait phones, less than 576px)
+ No media query since this is the default in Bootstrap*/
+
+
+/* Small devices (landscape phones, 576px and up)*/
+
+.homesection
+{
+
+
+
+  background-image: url(../img/img1.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+min-height: 700px;
+
+
+}
+ 
+ 
+
+.innerhome{
+
+}
+.card-form{
+  height: 90%;
+}
+
+@media (max-width: 575px)
+  { 
+
+  .myrow{
+    margin-bottom: 2px;
+
+    
+  }
+}
+
+ 
+ @media (min-width: 576px)
+  { 
+  
+  }
+  
+@media (min-width: 768px)
+  { 
+  
+  
+  }
+  @media (min-width: 992px)
+  { 
+  
+  
+  }
+  @media (min-width: 1200px)
+  { 
+  
+  
+  }
+  
+

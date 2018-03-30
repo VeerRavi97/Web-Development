@@ -1,0 +1,17 @@
+body{
+	background: url(images/background1.jpg); 
+	background-size: cover;
+  
+
+	
+}
+img{
+	cursor: pointer;
+	float: left;
+margin:  6.66%;
+	
+}
+a#hi:hover {
+	color: green;
+	font-family: 'Slabo 27px', serif;
+}
