@@ -1,0 +1,48 @@
+*{
+	margin: 0;
+	padding: 0;
+box-sizing: border-box;
+}
+.navbar{
+    border-bottom: 1px solid deepskyblue;
+  
+  }
+  
+  .nav-item:hover{
+transition-duration: .5s;
+transform:scale(1.1);
+
+
+background-color:none;
+  }
+
+
+
+.header{
+	background-image:  ;
+	background-size: cover;
+	/*background-repeat: no-repeat;*/
+	background-image: linear-gradient( to right,rgba(1, 71, 107,0.7),rgba(148, 148, 184,0.6)), url(../img/train.jpg);
+	height: 90vh;
+	background-repeat: no-repeat;
+	background-position: top;
+	background-image:  ;
+	
+	
+
+}
+.info{
+	letter-spacing: 5px;
+	font-family: 'Source Sans Pro', sans-serif;
+
+}
+.hero{
+	position: absolute;
+	top: 50%;
+	left: 50%;
+	
+	
+}
+.sub{
+	letter-spacing: 2px;
+}
