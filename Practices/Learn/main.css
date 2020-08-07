@@ -1,0 +1,261 @@
+selector {
+  property: value;
+  anotherProperty: value;
+}
+
+*/ ******* Adding CSS to HTML*********
+/* Inline
+
+/* <h3 style="color: pink;">blah blah blah </h3>
+<h3 style="color: pink;">knock knock </h3>
+<p style="color: yellow;">blah blah blah </p>
+<h1 style="color:blue;text-align:center;">This is a heading</h1> */
+
+/* Style Tag */
+/* <style type="text/css">
+body {
+  background-color: linen;
+}
+
+h1 {
+  color: maroon;
+  margin-left: 40px;
+}
+</style> */
+
+/* link Tag */
+/* <link rel="stylesheet" type="text/css" href="main.css">  // main.css or style.css */
+
+************selector******** Element selector select all instances of the Element p {
+  color: black;
+}
+
+/* ID selector: select an element with a given ID */
+#id_name {
+  color: blue;
+}
+
+class .class_name {
+  color: blue;
+}
+
+Attributes [disabled] {
+  color: red;
+}
+
+input[type="text"] {}
+
+
+/* pseudo-class selectors */
+a:hover {}
+
+
+**********Combinators*********
+/* Direct Child */
+
+
+
+/* Directly after     adjacent sibling */
+<div><p><h2><span><p></p></span <h2><p></div><p>div+p {}
+
+// selects the 2nd p, first p is child to div
+p+h2 // select 1st h2
+
+div p {}
+
+// all headings inside div 1st, 2nd, 3rd, no matter direct child od not
+div>p {}
+
+// Direct child(ren) 1st p and 3rd p only, not inside span
+
+li:first-child {}
+
+li:last-child {}
+
+li:nth-child(3) {}
+
+li:nth-child(3n+0) {}
+
+// 0 is the starting index, every 3rd from index 0
+
+li:nth-child(odd) {}
+
+li:nth-child(even) {}
+
+
+/* ********Box Model **********]
+element
+padding: inside the border
+border
+margin:outside the border 
+Box-sizing: // padding is part of box width. by default, new width=padding+old width , pushes the element down
+*/
+
+.border {
+  border: 1px solid black;
+  /*           */
+  border-bottom: 1px solid orange;
+  border-width: 2px;
+  border-style: solid;
+  border-color: aliceblue;
+  border-radius: 1px;
+  box-shadow: 1px 2px 1px 2px rgba(red, green, blue, 0.5);
+}
+
+
+p {
+  background: aliceblue;
+  background: url("images/photo.jpg");
+  background-repeat: no-repeat;
+  background-repeat: repeat-x;
+  background-repeat: repeat-y;
+}
+
+
+#positioning-elements {
+  /* starting point is the initial position  others remain at their position */
+  position: relative;
+  top: 30px;
+  bottom: 30px;
+  left: 30px;
+  right: 30px;
+
+}
+
+.parent {
+  position: relative;
+}
+
+#child {
+  position: absolute;
+}
+
+#zindex {
+  As in;
+  which one appears as if it is physically closer to you;
+  Overlapping elements with a larger z-index cover those with a smaller one. Note: z-index only works on positioned elements (position: absolute, position: relative, position: fixed, or position: sticky).
+}
+
+#sticky {
+  position: sticky;
+  top: 0;
+}
+
+#CSS-Reset {
+
+  /* removes the browser default settings, applies for all elements */
+  * {
+    margin: 0;
+    padding: 0;
+  }
+
+  #class {
+    /* margin and padding on all sides */
+    margin: 20px;
+    padding: 20px;
+    margin-top: 10px;
+    margin-right: 20px;
+    margin-bottom: 10px;
+    margin-left: 20px;
+    margin: 10px 20px 10px 20px;
+    margin: 10px 20px;
+  }
+
+
+  .display {
+    display: block;
+    /*inline to block*/
+    /* we can't do  margin auto on inline elements, elements have to be block */
+    list-style: none;
+    /* remove bullet dots*/
+    display: none;
+    /* invisible */
+    /* with display:inline, width, height, margin top, bottom have no effect */
+    display: inline-block;
+    /* we can add width, height on inline elements */
+    width: calc(100% - 49px);
+  }
+
+  a {
+    text-decoration: none;
+
+  }
+
+  .font {
+    font-family: Arial, Helvetica, sans-serif;
+    line-height: 1px;
+    /* gap between two sentences */
+    font-size: 20px;
+    font-weight: bold;
+  }
+
+  .text {
+    text-align: left;
+    text-align-last: center;
+    word-spacing: 1px;
+    letter-spacing: 2px;
+  }
+
+  a {
+    text-decoration: none;
+    /*underlined */
+    border-bottom: 1px solid black;
+  }
+
+  a:hover {
+    font-size: 20px;
+  }
+
+  a:visited {
+    color: red;
+  }
+
+  a:active {
+    /* when clicked hold mouse  pseudo classes */
+
+  }
+
+  .working_with_background {
+    background-image: url("photo.jpg");
+
+  }
+
+
+  /* Animation and Transition 
+1. pseudo classes
+focus: triggers when an element receives focus, useful for input 
+hover, active(time between hover and clicked)
+box-shadow : x,y, color
+to add tblr, add position:relative first
+
+2.transform
+transform:translate(x,y) //  translateX, translate Y
+transform:scale(2) .5 halved // alter the size of element scaleX, scaleY
+by default, 0,0 is the origin point
+transform-origin:left
+transform:rotate(90deg) clockwise
+
+3. Translating (Control animation properties)
+transition-duration:1px; how long should the transition last?
+
+
+
+
+
+
+
+
+
+
+
+
+
+*/
+
+  .btn {
+    outline: none;
+    /* when click on it, you can see outline default */
+    border: none;
+    cursor: pointer;
+    text-transform: uppercase;
+  }

@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+  <link rel="stylesheet" href="style.css">
+  <script src="https://d3js.org/d3.v5.min.js"></script>
+
+</head>
+
+<body>
+  <header>
+
+  </header>
+  <main>
+    <section id="team">
+      <div class="team__container">
+        <form action=" " class="team__form">
+          <div class="team__input-row">
+            <div class="team__input-col">
+              <h1>New Team</h1>
+
+              <div class="team__form-group">
+                <label for="name">Member Name</label>
+                <input type="text" name="name" id="name" placeholder="Name">
+              </div>
+              <div class="team__form-group">
+                <label for="role">Role</label>
+                <select name="selectedRole" id="role">
+                  <option value="Select Role" selected disabled>Select Role</option>
+                  <option value="Developer">Developer</option>
+                  <option value="Designer">Designer</option>
+                  <option value="HR">HR</option>
+                  <option value="Technical Support">Technical Support</option>
+
+                </select>
+              </div>
+              <div class="team__form-group">
+                <label for="country">Country</label>
+                <select name="selectedCountry" id="country">
+                  <option value="select" selected disabled>Select country</option>
+                  <option value="India">India</option>
+                  <option value="New Zealand">New Zealand</option>
+                  <option value="South Korea">South Korea</option>
+                  <option value="Australia">Australia</option>
+                  <option value="Kenya">kenya</option>
+
+
+                </select>
+              </div>
+
+              <div class="team__form-group">
+                <label for="email">Primary email</label>
+                <input type="email" name="email" id="email">
+              </div>
+
+
+            </div>
+            <div class="team__donut-col">
+              <div class="doughnut">
+              </div>
+              <div class="btn__class">
+                <button class="btn__el">Add</button>
+              </div>
+
+            </div>
+        </form>
+      </div>
+
+
+      <div class="team__display-row">
+        <table class="team__members">
+          <tbody id="team__member-list">
+          </tbody>
+        </table>
+        <div class="members--save">
+          <button class="save">Save</button>
+        </div>
+      </div>
+
+      </div>
+    </section>
+
+
+
+
+    <script type="module" src="js/main.js"></script>
+
+
+</body>
+
+</html>
